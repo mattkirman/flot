@@ -2061,7 +2061,7 @@
             }
 
             ctx.lineWidth = lw;
-            ctx.strokeStyle = series.color;
+            ctx.strokeStyle = series.points.borderColor || series.color;
             plotPoints(series.datapoints, radius,
                        getFillStyle(series.points, series.color), 0, false,
                        series.xaxis, series.yaxis, symbol);
